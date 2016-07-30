@@ -1,0 +1,35 @@
+
+//colors 
+
+$Alabaster 	: #f7f7f7;
+$Mine_Shaft : #3A3A3A;
+
+// Functional colors 
+
+$color_main : $Alabaster;
+$color_text : $Mine_Shaft;
+
+//Font stack
+
+$stak_batman: 'batman_forever';
+
+//border raduis
+
+$br : 5px;
+
+// img width 
+
+$wd : 50%;
+
+// font size for text
+
+$fs : 0.6em;
+
+//assets path 
+
+$path_font : 'batman_forever' ;
+
+//Mediq query breakpoints
+
+$brk_nerrow : '(min-width: 768px)';
+$brk_wide    : '(min-width: 1024px)';

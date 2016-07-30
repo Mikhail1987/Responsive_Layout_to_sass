@@ -1,0 +1,51 @@
+* {
+
+	box-sizing: border-box;
+
+}
+
+body {
+	margin: 0;
+  	padding: 0;
+  	text-align: center;
+	font-family: $stak_batman;
+	line-height: 1.6;
+	color: $color_text;
+	background-color: $color_main;
+}
+
+/* External Fonts*/
+
+
+
+p {
+	font-size: $fs;
+	padding: 0 5px;
+}
+
+h3 {
+	font-size: 0.8em;
+}
+
+span {
+	font-weight: 600;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: $color_text;
+
+	&:hover {
+		color: black;
+		font-family: 'batman_forever_o';
+	}
+}
+
+header p {
+	margin-bottom: 20px;
+}
+

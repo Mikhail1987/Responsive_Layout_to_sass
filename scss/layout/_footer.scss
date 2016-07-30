@@ -1,0 +1,130 @@
+.Contact_ifo {
+	background-color: $color_main;
+}
+
+.phone,
+.email {
+	color: $color_text;
+	padding-bottom: 0.25em;
+	font-size: $fs;
+
+	&:visited{
+		color: $color_text;
+	}
+}
+
+.bottom-name{
+	float: left;
+	margin: 0;
+	padding-left: .5em;
+	display: block;
+	
+}
+
+.back {
+	float: right;
+	margin: 0;
+	@extend %top;
+	@extend %bottom;
+	padding-right: 30px;
+	display: block;
+	width: $wd;
+	font-size: 0.7em;
+	text-align: right;
+
+	&:visited {
+		color: $color_text;
+	}
+	
+	&:hover {
+		color: black;
+		font-family: 'batman_forever_o';	
+	}
+}
+
+
+.bottom-nav{
+	list-style-type: none;
+	display: block;
+	padding: 0;
+	border-bottom: 1px solid;
+	border-color: rgba(130,130,130, 0.2);
+	width: 98%;
+	margin: 0 auto;
+
+	li:nth-child(2n) {
+		padding-bottom: 40px;
+		border-bottom: rgba(170, 170, 170, 5);
+	}
+
+	@media #{$brk_nerrow}{
+		border-bottom: 1px solid;
+		border-color: rgba(130,130,130, 0.2);
+		width: 98%;
+		margin: 0 auto;
+	}
+}
+
+
+
+footer {
+	h3 {
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+
+	p {
+		@extend %top;
+		@extend %bottom;
+		margin-bottom: 5px;
+	}
+
+	@media #{$brk_wide}{
+		padding-top: 20px;
+	}
+}
+
+
+#bottom_name {
+	@extend %display;
+
+	@media #{$brk_nerrow}{
+		display: block;
+		font-size: 0.7em;
+		float: left;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+}
+.sec-foot {
+	@extend %display;
+
+	@media #{$brk_nerrow}{
+		font-size: 0.7em;
+		display: flex;
+		justify-content: flex-end;
+
+		li {
+			display: inline-block;
+			margin: 0.67em 15px;
+		}
+	}
+}
+
+/* ---- Float clearfix ---- */
+.clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+ .clear {
+ 	clear: right;
+ }   
+
+ .clear_left {
+ 	clear: left;
+ }
+ .clear_both {
+ 	clear: both;
+ }

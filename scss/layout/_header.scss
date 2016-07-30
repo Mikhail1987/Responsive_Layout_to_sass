@@ -1,0 +1,90 @@
+
+
+/* -------------Navigation -------------*/
+
+.main-nav {
+	list-style-type: none;
+	margin: 0 auto;
+  	padding: 0;
+  	text-align: center;
+  	@extend %nav;
+  	
+  	li {
+		background-color: white;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		margin: 5px auto;
+		width: 98%;
+		text-align: center;
+		border-radius: 5px;
+	}
+	
+	a{
+		font-size: .75em;
+		color: black;
+	    text-transform: uppercase;
+	    display: block;
+	   
+		    &:visited {
+				color: $color_text;
+			}
+
+			&:hover {
+			color: black;
+			font-family: 'batman_forever_o';
+			}
+	}
+
+	@media #{$brk_nerrow}{
+				
+
+				display: flex;
+				justify-content: center;
+				
+	       li {
+		    	margin: 0 10px;
+		    	width: 90px;
+		    	background-color: #f7f7f7;
+			}
+
+	}
+
+	
+	@media #{$brk_wide}{
+		display: flex;
+       justify-content: flex-end;
+	}
+}
+
+
+#name {
+
+	@media #{$brk_wide}{
+		float: left;
+		margin-top: 10px;
+		margin-left: 0.8em;
+	}
+
+    font-size: 0.9em;
+    margin: 0;   
+    margin-top: 20px;
+   	@extend %nav;
+}
+	
+
+@media #{$brk_nerrow}{
+	.banner {
+		display: block;
+				
+	}
+}	
+
+header {
+		@media #{$brk_nerrow}{
+			p {
+				max-width: 70%;
+				margin-left: 2em;
+			}
+		}
+	}
+
