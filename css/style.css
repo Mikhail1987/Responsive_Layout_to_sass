@@ -80,6 +80,8 @@ header p {
     .main-nav {
       display: flex;
       justify-content: center; }
+      .main-nav .main-nav {
+        display: none; }
       .main-nav li {
         margin: 0 10px;
         width: 90px;
@@ -263,7 +265,7 @@ footer p {
   padding-top: 10px; }
 
 .main-nav, #name {
-  display: block;
+  /*display: block;*/
   text-align: center;
   padding: 10px 15px; }
 
