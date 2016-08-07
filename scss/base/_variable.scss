@@ -3,11 +3,18 @@
 
 $Alabaster 	: #f7f7f7;
 $Mine_Shaft : #3A3A3A;
+$slight_gay : rgba(130,130,130, 0.2);
+$light_gay  : rgba(170, 170, 170, 5);
 
 // Functional colors 
 
-$color_main : $Alabaster;
-$color_text : $Mine_Shaft;
+$color_main  : $Alabaster;
+$color_text  : $Mine_Shaft;
+$color_black : black;
+$color_white : white;
+$color_border : $slight_gay;
+$color_b_border : $light_gay;
+
 
 //Font stack
 

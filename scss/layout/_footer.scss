@@ -37,7 +37,7 @@
 	}
 	
 	&:hover {
-		color: black;
+		color: $color_black;
 		font-family: 'batman_forever_o';	
 	}
 }
@@ -48,18 +48,18 @@
 	display: block;
 	padding: 0;
 	border-bottom: 1px solid;
-	border-color: rgba(130,130,130, 0.2);
+	border-color: $color_border;
 	width: 98%;
 	margin: 0 auto;
 
 	li:nth-child(2n) {
 		padding-bottom: 40px;
-		border-bottom: rgba(170, 170, 170, 5);
+		border-bottom: $color_b_border;
 	}
 
 	@media #{$brk_nerrow}{
 		border-bottom: 1px solid;
-		border-color: rgba(130,130,130, 0.2);
+		border-color: $color_border;
 		width: 98%;
 		margin: 0 auto;
 	}
