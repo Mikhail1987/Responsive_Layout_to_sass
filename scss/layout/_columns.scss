@@ -3,7 +3,7 @@
 	@extend %bottom;
 	background-color: $color_white;
 
-	@media #{$brk_nerrow}{
+	@include tablet{
 		overflow: hidden;
 	}
 }
@@ -21,13 +21,13 @@
 
 
 .col_1 {
-	@media #{$brk_nerrow}{
+	@include tablet{
 		float: left;
 		width: 50%;
 		background-color: $color_white;
 	}
 
-	@media #{$brk_wide}{
+	@include desktop{
 		float: left;
 		width: 33%;
 	}
@@ -35,24 +35,24 @@
 }
 
 .col_2 {
-	@media #{$brk_nerrow}{
+	@include tablet{
 		float: right;
 		width: 50%;
 		background-color: $color_white;
 	}
 	
-	@media #{$brk_wide}{
+	@include desktop{
 		float: left;
 		width: 33%;
 	}	
 }
 
 .col_3 {
-	@media #{$brk_nerrow}{
+	@include tablet{
 		background-color: $color_white;
 	}
 
-	@media #{$brk_wide}{
+	@include desktop{
 		float: left;
 		width: 33%;
 	}
@@ -60,7 +60,7 @@
 }
 
 .span_in{
-	@media #{$brk_nerrow}{
+	@include tablet{
 		display: inline;
 		width: 50%;
 		float: left;
@@ -69,7 +69,7 @@
 		padding-bottom: 20px;
 	}
 
-	@media #{$brk_wide}{
+	@include desktop{
 		display: block;
 		width: 100%;
 		float: none;

@@ -8,3 +8,17 @@
 	}
 
 }
+
+//Media Quiery for diferent screen sizes 
+
+@mixin tablet {
+  @media (min-width: #{$brk_nerrow}){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$brk_wide}) {
+    @content;
+  }
+}

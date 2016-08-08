@@ -19,6 +19,7 @@ $color_b_border : $light_gay;
 //Font stack
 
 $stak_batman: 'batman_forever';
+$stack_batman_o: 'batman_forever_o';
 
 //border raduis
 
@@ -30,7 +31,12 @@ $wd : 50%;
 
 // font size for text
 
-$fs : 0.6em;
+$fs  : 0.6em;
+$fh4 : 0.7em;
+$fa  : 0.75em;
+$fh3 : 0.8em;
+$fh1 : 0.9em;
+$tw  : 600;
 
 //assets path 
 
@@ -38,5 +44,5 @@ $path_font : 'batman_forever' ;
 
 //Mediq query breakpoints
 
-$brk_nerrow : '(min-width: 768px)';
-$brk_wide    : '(min-width: 1024px)';
+$brk_nerrow : '768px';
+$brk_wide    : '1024px';

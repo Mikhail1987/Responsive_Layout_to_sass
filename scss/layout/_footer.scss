@@ -29,7 +29,7 @@
 	padding-right: 30px;
 	display: block;
 	width: $wd;
-	font-size: 0.7em;
+	font-size: $fh4;
 	text-align: right;
 
 	&:visited {
@@ -38,7 +38,7 @@
 	
 	&:hover {
 		color: $color_black;
-		font-family: 'batman_forever_o';	
+		font-family: $stack_batman_o;	
 	}
 }
 
@@ -57,7 +57,7 @@
 		border-bottom: $color_b_border;
 	}
 
-	@media #{$brk_nerrow}{
+	@include tablet{
 		border-bottom: 1px solid;
 		border-color: $color_border;
 		width: 98%;
@@ -79,7 +79,7 @@ footer {
 		margin-bottom: 5px;
 	}
 
-	@media #{$brk_wide}{
+	@include desktop{
 		padding-top: 20px;
 	}
 }
@@ -88,9 +88,9 @@ footer {
 #bottom_name {
 	@extend %display;
 
-	@media #{$brk_nerrow}{
+	@include tablet{
 		display: block;
-		font-size: 0.7em;
+		font-size: $fh4;
 		float: left;
 		margin-top: 20px;
 		margin-left: 20px;
@@ -99,8 +99,8 @@ footer {
 .sec-foot {
 	@extend %display;
 
-	@media #{$brk_nerrow}{
-		font-size: 0.7em;
+	@include tablet{
+		font-size: $fh4;
 		display: flex;
 		justify-content: flex-end;
 
